@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Shouter</title>
+	</head>
+	<h1>Welcome to Shouter</h1>
+	<h2>Shouts</h2>
+	<body>
+		<select>
+			<options
+		</select>
+		<form action="/shout" method="">
+			<p><label>Shout: <input name="shout" type="text"/></label></p>
+		</form>
+		<ol>
+			<li> <%= @shout %> </li>
+		</ol>
+		<h2>Join Shouter</h2>
+		<form action="/submit" method="post">
+			<p><label>Name: <input name="name" type="text"/></label></p>
+			<p><label>Handle: <input name="handle" type="text"/></label></p>
+			<input type="submit" name="userinfo" value="Add Me"/> 			
+		</form>
+	</body>
+</html>

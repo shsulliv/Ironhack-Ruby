@@ -1,0 +1,13 @@
+<h1>Welcome to Ebay</h1>
+
+<h2>Browse the Selection</h2>
+
+<ul>
+	<% @products.each do |product| %>
+	<li>
+		<%= link_to product.title, user_product_path(product.user_id, product.id) %>
+		<p>Posted by <%= link_to product.user.name, user_products_path(product.user_id) %></p>
+		<p>Auction ends at <%= product.deadline %></p>
+	</li>
+	<% end %>
+</ul>

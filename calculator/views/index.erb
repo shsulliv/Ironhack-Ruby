@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Calculator</title>
+  </head>
+  <h1>Simple Calculator</h1>
+  <h2>
+    <a href="/counting">Countdown to 100!</a>
+  </h2>
+  <body>
+    <p>Enter two numbers here:</p>
+    <form action="/operation" method="post">
+    <p><label>First Value: <input name="firstvalue" value="<%= @data %>"/></label></p>
+    <p><label>Second Value: <input name="secondvalue" /></label></p>
+      <input type="submit" name="operation" value="Add"/>
+      <input type="submit" name="operation" value="Subtract"/>
+      <input type="submit" name="operation" value="Multiply"/>
+      <input type="submit" name="operation" value="Divide"/>
+      <input type="submit" name="operation" value="Save Data"/>
+    </form>
+  <p><%= @result %></p>
+  </body>
+</html>
